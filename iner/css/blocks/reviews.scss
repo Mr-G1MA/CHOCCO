@@ -6,7 +6,7 @@
   overflow: hidden;
 
   &:before{
-    content: url('../../images/decor_plant.png');
+    content: url('../images/decor_plant.png');
     position: absolute;
     right: 0;
     top:5%;
@@ -88,14 +88,14 @@
   position: relative;
 
   &:before{
-    content: url('../../images/strawberry.png');
+    content: url('../images/strawberry.png');
     position: absolute;
     top: 3%;
     right:3%;
   }
 
   &:after{
-    content: url('../../images/many_berries.png');
+    content: url('../images/many_berries.png');
     position: absolute;
     left: 0;
     bottom: -80px;
