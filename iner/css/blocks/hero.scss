@@ -1,0 +1,69 @@
+.hero{
+  background:  
+  url('../../images/leaf_bg.png') right bottom no-repeat;
+  background-color: $blue;
+  height: 100vh;
+  min-height: 650px;
+  color: white;
+  position: relative;
+
+  &:before{
+    position: absolute;
+    content: url(../../images/small_leaf.png);
+    bottom: -40px;
+    left: 2%;
+  }
+
+  
+}
+
+.raspberries{
+  position: absolute;
+  right: 25%;
+  bottom: 7%;
+}
+
+.berries{
+  position: absolute;
+  right: 8%;
+  bottom: -40px;
+}
+
+.leaf__right{
+  position: absolute;
+  right: 1%;
+  bottom: 15%;
+}
+
+.leaf__bot{
+  position: absolute;
+  right: 22%;
+  bottom: -25px;
+}
+
+.hero__title-section{
+  width: 46%;
+}
+
+.hero__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px 0 45px 0;
+  background: url('../../images/chocolate.png') right center / 50% auto no-repeat;
+}
+
+.hero__main-title{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.hero__title-desc{
+  font-size: 21px;
+  margin-bottom: 33px;
+  padding-right: 13%;
+}
