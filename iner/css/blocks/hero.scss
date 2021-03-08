@@ -14,32 +14,16 @@
     left: 2%;
   }
 
+  &:after{
+    position: absolute;
+    content: url('../images/comp.png');
+    right: 1%;
+    bottom: -56px;
+  }
+
   
 }
 
-.raspberries{
-  position: absolute;
-  right: 25%;
-  bottom: 7%;
-}
-
-.berries{
-  position: absolute;
-  right: 8%;
-  bottom: -40px;
-}
-
-.leaf__right{
-  position: absolute;
-  right: 1%;
-  bottom: 15%;
-}
-
-.leaf__bot{
-  position: absolute;
-  right: 22%;
-  bottom: -25px;
-}
 
 .hero__title-section{
   width: 46%;
