@@ -14,8 +14,14 @@
 
 .form__row{
   display: flex;
-  margin-bottom: 3px;
+  margin-bottom: 13px;
+
+  &--margin-textarea{
+    margin-bottom: 28px;
+  }
 }
+
+
 
 .form__block{
   flex: 1;
@@ -32,6 +38,7 @@
   padding: 16px 11px;
   border: 3px solid transparent;
   border-radius: 4px;
+  display: block;
 
   &:focus{
     outline: none;
@@ -39,7 +46,7 @@
   }
 
   &-textarea{
-    height: 160px;
+    height: 152px;
     resize: none;
     margin-bottom: 13px;
   }

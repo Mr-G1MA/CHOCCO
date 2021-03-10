@@ -6,10 +6,13 @@
   overflow: hidden;
 
   &:before{
-    content: url('../images/decor_plant.png');
+    content: "";
     position: absolute;
     right: 0;
     top:5%;
+    width: 128px;
+    height: 176px;
+    background: url('../images/decor_plant.png') no-repeat;
   }
 
   &:after{
@@ -88,17 +91,23 @@
   position: relative;
 
   &:before{
-    content: url('../images/strawberry.png');
+    content: "";
     position: absolute;
     top: 3%;
     right:3%;
+    width: 136px;
+    height: 86px;
+    background: url('../images/strawberry.png') no-repeat;
   }
 
   &:after{
-    content: url('../images/many_berries.png');
+    content: "";
     position: absolute;
     left: 0;
     bottom: -80px;
+    width: 136px;
+    height: 202px;
+    background: url('../images/many_berries.png');
   }
 }
 

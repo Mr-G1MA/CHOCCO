@@ -76,18 +76,6 @@ img {
   color: white;
   position: relative;
 }
-.hero:before {
-  position: absolute;
-  content: url(../images/small_leaf.png);
-  bottom: -40px;
-  left: 2%;
-}
-.hero:after {
-  position: absolute;
-  content: url("../images/comp.png");
-  right: 1%;
-  bottom: -56px;
-}
 
 .hero__title-section {
   width: 46%;
@@ -100,6 +88,25 @@ img {
   height: 100%;
   padding: 24px 0 45px 0;
   background: url("../images/chocolate.png") right center/50% auto no-repeat;
+  position: relative;
+}
+.hero__container:before {
+  position: absolute;
+  content: "";
+  background: url(../images/small_leaf.png);
+  width: 60px;
+  height: 112px;
+  bottom: -40px;
+  left: -46px;
+}
+.hero__container:after {
+  position: absolute;
+  content: "";
+  background: url("../images/comp.png");
+  width: 520px;
+  height: 652px;
+  right: 0;
+  bottom: -56px;
 }
 
 .hero__main-title {
@@ -310,10 +317,13 @@ img {
   background: url("../images/decor_leaf.png") left bottom 50% no-repeat;
 }
 .benefits-section:before {
-  content: url("../images/bar.png");
+  content: "";
   position: absolute;
   bottom: -100px;
   left: 0;
+  width: 162px;
+  height: 324px;
+  background: url("../images/bar.png") no-repeat;
 }
 
 .reviews__display {
@@ -324,10 +334,13 @@ img {
   overflow: hidden;
 }
 .reviews__display:before {
-  content: url("../images/decor_plant.png");
+  content: "";
   position: absolute;
   right: 0;
   top: 5%;
+  width: 128px;
+  height: 176px;
+  background: url("../images/decor_plant.png") no-repeat;
 }
 .reviews__display:after {
   content: "";
@@ -403,16 +416,22 @@ img {
   position: relative;
 }
 .reviews__section:before {
-  content: url("../images/strawberry.png");
+  content: "";
   position: absolute;
   top: 3%;
   right: 3%;
+  width: 136px;
+  height: 86px;
+  background: url("../images/strawberry.png") no-repeat;
 }
 .reviews__section:after {
-  content: url("../images/many_berries.png");
+  content: "";
   position: absolute;
   left: 0;
   bottom: -80px;
+  width: 136px;
+  height: 202px;
+  background: url("../images/many_berries.png");
 }
 
 .reviews__decor {
@@ -476,7 +495,10 @@ img {
 
 .form__row {
   display: flex;
-  margin-bottom: 3px;
+  margin-bottom: 13px;
+}
+.form__row--margin-textarea {
+  margin-bottom: 28px;
 }
 
 .form__block {
@@ -493,13 +515,14 @@ img {
   padding: 16px 11px;
   border: 3px solid transparent;
   border-radius: 4px;
+  display: block;
 }
 .form__input:focus {
   outline: none;
   border-color: #DEE2BD;
 }
 .form__input-textarea {
-  height: 160px;
+  height: 152px;
   resize: none;
   margin-bottom: 13px;
 }

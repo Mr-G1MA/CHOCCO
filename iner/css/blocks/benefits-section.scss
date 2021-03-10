@@ -3,9 +3,12 @@
   background: url('../images/decor_leaf.png') left bottom 50% no-repeat;
 
   &:before{
-    content: url('../images/bar.png');
+    content: "";
     position: absolute;
     bottom: -100px;
     left: 0;
+    width: 162px;
+    height: 324px;
+    background: url('../images/bar.png') no-repeat;
   }
 }

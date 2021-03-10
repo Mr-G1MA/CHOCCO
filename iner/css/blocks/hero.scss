@@ -7,19 +7,7 @@
   color: white;
   position: relative;
 
-  &:before{
-    position: absolute;
-    content: url(../images/small_leaf.png);
-    bottom: -40px;
-    left: 2%;
-  }
-
-  &:after{
-    position: absolute;
-    content: url('../images/comp.png');
-    right: 1%;
-    bottom: -56px;
-  }
+  
 
   
 }
@@ -36,6 +24,27 @@
   height: 100%;
   padding: 24px 0 45px 0;
   background: url('../images/chocolate.png') right center / 50% auto no-repeat;
+  position: relative;
+
+  &:before{
+    position: absolute;
+    content: "";
+    background: url(../images/small_leaf.png);
+    width: 60px;
+    height: 112px;
+    bottom: -40px;
+    left: -46px;
+  }
+
+  &:after{
+    position: absolute;
+    content: "";
+    background: url('../images/comp.png');
+    width: 520px;
+    height: 652px;
+    right: 0;
+    bottom: -56px;
+  }
 }
 
 .hero__main-title{
