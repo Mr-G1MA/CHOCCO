@@ -15,7 +15,7 @@
 }
 
 @mixin phones-min{
-  @media screen and (max-width: $phones - 110px){
+  @media screen and (max-width: $phones - 100px){
     @content;
   }
 }

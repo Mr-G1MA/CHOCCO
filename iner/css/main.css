@@ -483,7 +483,7 @@ img {
     margin-bottom: 0.0555555556rem;
   }
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 380px) {
   .headline__title {
     padding-top: 7%;
   }
@@ -634,7 +634,7 @@ img {
   height: 9.7777777778rem;
   background: url("../images/decor_plant.png") center/contain no-repeat;
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 380px) {
   .reviews__display:before {
     background: none;
   }
@@ -770,6 +770,11 @@ img {
     left: -4%;
   }
 }
+@media screen and (max-width: 380px) {
+  .reviews__section:after {
+    background: none;
+  }
+}
 @media screen and (max-width: 480px) {
   .reviews__section {
     padding: 4% 0;
@@ -785,6 +790,11 @@ img {
   .reviews__decor {
     width: 4.6666666667rem;
     height: 14.8333333333rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .reviews__decor {
+    display: none;
   }
 }
 
@@ -956,7 +966,7 @@ img {
   border-radius: 0;
   background: url("../images/checked.png") center center no-repeat;
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 380px) {
   .radio {
     margin-right: 0.2222222222rem;
   }

@@ -147,6 +147,10 @@
     @include phones{
       left:-4%;
     }
+    
+    @include phones-min{
+      background: none;
+    }
   }
 
   @include phones{
@@ -162,5 +166,9 @@
   @include phones{
     width: rem(84px);
     height: rem(267px);
+  }
+
+  @include phones-min{
+    display: none;
   }
 }
