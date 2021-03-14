@@ -7,6 +7,10 @@
   @include tablets{
     background: url('../images/order_back.png')center center no-repeat;
   }
+
+  @include phones{
+    padding: 4% 0;
+  }
 }
 
 .order__section-title{

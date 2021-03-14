@@ -611,6 +611,7 @@ img {
 @media screen and (max-width: 480px) {
   .benefits-section {
     background: none;
+    padding: 4% 0;
   }
   .benefits-section:before {
     background: none;
@@ -769,6 +770,11 @@ img {
     left: -4%;
   }
 }
+@media screen and (max-width: 480px) {
+  .reviews__section {
+    padding: 4% 0;
+  }
+}
 
 .reviews__decor {
   position: absolute;
@@ -821,6 +827,11 @@ img {
 @media screen and (max-width: 768px) {
   .order__section {
     background: url("../images/order_back.png") center center no-repeat;
+  }
+}
+@media screen and (max-width: 480px) {
+  .order__section {
+    padding: 4% 0;
   }
 }
 

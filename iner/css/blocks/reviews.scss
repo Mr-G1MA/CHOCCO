@@ -148,6 +148,10 @@
       left:-4%;
     }
   }
+
+  @include phones{
+    padding: 4% 0;
+  }
 }
 
 .reviews__decor{
