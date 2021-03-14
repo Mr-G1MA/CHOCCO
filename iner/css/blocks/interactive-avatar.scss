@@ -1,10 +1,10 @@
 .interactive-avatar{
-  width: 80px;
-  height: 80px;
-  border: 6px solid transparent;
+  width: rem(84px);
+  height: rem(84px);
+  border: rem(6px) solid transparent;
   border-radius: 50%;
-  overflow: hidden;
   position: relative;
+  
 
   &--active{
     border-color: #365A49;
@@ -14,20 +14,24 @@
     border-color: #365A49;
   }
 
+  
 }
 
-.interactive__avatar-link{
+.interactive-avatar__link{
+  border: rem(5px) solid transparent;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: rem(85px);
+  height: rem(85px);
+  top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   display: block;
 }
 
-.interactive__avatar-img{
+.interactive-avatar__img{
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 50%;
 }

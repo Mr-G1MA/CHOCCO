@@ -3,18 +3,41 @@
   url('../images/leaf_bg.png') right bottom no-repeat;
   background-color: $blue;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   color: white;
   position: relative;
 
-  
-
-  
+  @include tablets{
+    background-position: right bottom 78%;
+  }
 }
 
+.hero__icons-section{
+  @include tablets{
+    display: none;
+  }
+}
 
 .hero__title-section{
   width: 46%;
+
+  @include tablets{
+    width:100%;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &:before{
+      content: "";
+      width: rem(363px);
+      height: rem(368px);
+      background: url('../images/bars&berries.png') center / contain no-repeat;
+      margin-bottom: rem(40px);
+    }
+  }
 }
 
 .hero__container{
@@ -22,41 +45,68 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 45px 0;
+  padding: rem(24px) 0 rem(45px) 0;
   background: url('../images/chocolate.png') right center / 50% auto no-repeat;
   position: relative;
+
+  @include tablets{
+    background: none;
+  }
+
+  &:before, &:after{
+    @include tablets{
+      display: none;
+    }
+  }
 
   &:before{
     position: absolute;
     content: "";
-    background: url(../images/small_leaf.png);
-    width: 60px;
-    height: 112px;
-    bottom: -40px;
-    left: -46px;
+    background: url(../images/small_leaf.png) center / contain no-repeat;
+    width: rem(60px);
+    height: rem(112px);
+    bottom: rem(-40px);
+    left: rem(-46px);
   }
 
   &:after{
     position: absolute;
     content: "";
-    background: url('../images/comp.png');
-    width: 520px;
-    height: 652px;
+    background: url('../images/comp.png') center / contain no-repeat;
+    width: rem(520px);
+    height: rem(652px);
     right: 0;
-    bottom: -56px;
+    bottom: rem(-56px);
   }
 }
 
 .hero__main-title{
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: 700;
   line-height: 1.25;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
   text-transform: uppercase;
+
+  @include tablets{
+    margin-bottom: rem(4px);
+  }
+
+  @include phones{
+    font-size: rem(42px);
+  }
 }
 
 .hero__title-desc{
-  font-size: 21px;
-  margin-bottom: 33px;
+  font-size: rem(21px);
+  margin-bottom: rem(33px);
   padding-right: 13%;
+
+  @include tablets{
+    padding: 0 25%;
+    margin-bottom: rem(20px);
+  }
+
+  @include phones{
+    padding: 0 13%;
+  }
 }

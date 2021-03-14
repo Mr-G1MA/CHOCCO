@@ -3,10 +3,14 @@
   url('../images/berry.png') left 5% bottom 8% no-repeat,
   url('../images/order_back.png')center center no-repeat 
   ;
+
+  @include tablets{
+    background: url('../images/order_back.png')center center no-repeat;
+  }
 }
 
 .order__section-title{
   color: #365A49;
-  margin-bottom: 57px;
+  margin-bottom: rem(57px);
 }
 

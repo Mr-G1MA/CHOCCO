@@ -1,9 +1,9 @@
 .btn{
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 800;
-  padding: 18px 35px;
+  padding: rem(18px) rem(35px);
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: rem(100px);
   text-decoration: none;
   border: none;
   display: inline-block;
@@ -23,7 +23,7 @@
     background: #365A49;
     color: white;
     cursor: pointer;
-    padding: 20px 40px;
+    padding: rem(20px) rem(40px);
     
 
     &:hover{
@@ -35,13 +35,17 @@
     background: none;
     color: #497870;
     cursor: pointer;
-    padding: 0px 15px;
-    font-size: 18px;
+    padding: rem(0px) rem(15px);
+    font-size: rem(18px);
     font-weight: 400;
     text-transform: none;
 
     &:hover{
       color: black;
     }
+  }
+
+  @include phones{
+    padding: rem(23px) rem(53px);
   }
 }

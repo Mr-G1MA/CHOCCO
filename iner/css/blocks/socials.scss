@@ -1,0 +1,30 @@
+.socials{
+  display: flex;
+  align-items: center;
+}
+
+.socials__list{
+  display: flex;
+}
+
+.socials__item{
+  width: rem(20px);
+  height: rem(20px);
+  margin-right: rem(12px);
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.socials__icon-img{
+  fill: #B3B3B3;
+}
+
+.socials__link:hover{
+  &,.socials__icon-img{
+    fill: black;
+    transition: 0.3s;
+  }
+  
+}

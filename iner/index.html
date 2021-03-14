@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  <meta name="viewport" content="width=1000">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/main.css">
   <title>CHOCCO</title>
 </head>
@@ -15,7 +15,9 @@
         <div class="container hero__container">
           <header class="header">
             <div class="header__logo">
-              <img src="./images/logo.svg" alt="logo" class="logo">
+              <svg class="logo" viewBox="0 0 54 54">
+                <use xlink:href="./images/sprite.svg#logo" ></use>
+              </svg>
             </div>
             <nav class="menu">
               <ul class="menu__list">
@@ -42,13 +44,20 @@
                 </li>
               </ul>
             </nav>
-            <a href="tel:+78005553535" class="phone-number">
+            <a href="tel:+78005553535" class="phone-number header__phone-number">
               <span class="phone-number__icon">
-                <img src="./images/phone.svg" class="phone-number__icon-img" alt="phone">
+                <svg class="phone-number__icon-img" viewBox="0 0 25 25">
+                  <use xlink:href="./images/sprite.svg#phone" ></use>
+                </svg>
               </span>
               <span class="phone-number__text">
                 8 800 555 35 35
               </span>
+            </a>
+            <a href="" class="hamburger">
+              <span class="hamburger__plank"></span>
+              <span class="hamburger__plank"></span>
+              <span class="hamburger__plank"></span>
             </a>
           </header>
           <div class="hero__title-section">
@@ -60,7 +69,9 @@
             <ul class="features">
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="./images/leaf.svg" alt="leaf">
+                  <svg class="feature__icon-img" viewBox="0 0 54 54">
+                    <use xlink:href="./images/sprite.svg#leaf" ></use>
+                  </svg>
                 </div>
                 <div class="feature__text">
                   100% натуральный продукт
@@ -68,7 +79,9 @@
               </li>
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="./images/truck.svg" alt="leaf">
+                  <svg class="feature__icon-img" viewBox="0 0 54 54">
+                    <use xlink:href="./images/sprite.svg#truck" ></use>
+                  </svg>
                 </div>
                 <div class="feature__text">
                   3-5 дней доставка по РФ
@@ -76,7 +89,9 @@
               </li>
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="./images/tape.svg" alt="leaf">
+                  <svg class="feature__icon-img" viewBox="0 0 54 54">
+                    <use xlink:href="./images/sprite.svg#tape" ></use>
+                  </svg>
                 </div>
                 <div class="feature__text">
                   Не портит фигуру
@@ -97,7 +112,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__img">
                 <div class="benefit__img-wrapper">
-                  <img src="./images/healthy.svg" alt="human-icon" class="benefit__icon">
+                  <svg class="benefit-icon" viewBox="-27 -26 120 120">
+                    <use xlink:href="./images/sprite.svg#healthy" ></use>
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -113,7 +130,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__img">
                 <div class="benefit__img-wrapper">
-                  <img src="./images/yummy.svg" alt="human-icon" class="benefit__icon">
+                  <svg class="benefit-icon" viewBox="-27 -26 120 120">
+                    <use xlink:href="./images/sprite.svg#yummy" ></use>
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -129,7 +148,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__img">
                 <div class="benefit__img-wrapper">
-                  <img src="./images/strength.svg" alt="human-icon" class="benefit__icon">
+                  <svg class="benefit-icon" viewBox="-27 -32 120 120">
+                    <use xlink:href="./images/sprite.svg#strength" ></use>
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -238,7 +259,7 @@
               </div>
               <div class="controls">
 
-                <div class="form__controls">
+                <div class="form__controls controls-margin">
                   <label class="radio">
                     <input type="radio" name="option" class="radio__elem">
                     <div class="radio__visible"></div>
@@ -265,6 +286,58 @@
             </div>
           </form>
         </div>
+      </section>
+      <section class="section map-section">
+        <div class="map"></div>
+        <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__content">
+            <div class="address">Москва, ул.Новый Арбат, д.31/12</div>
+            <a href="tel:+78005553535" class="phone-number footer__phone-number">
+              <span class="phone-number__icon">
+                <svg class="footer-number__icon-img" viewBox="0 0 25 25">
+                  <use xlink:href="./images/sprite.svg#phone" ></use>
+                </svg>
+              </span>
+              <span class="footer-number__text">
+                8 800 555 35 35
+              </span>
+            </a>
+          </div>
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__icon-img" viewBox="0 -5 25 25">
+                    <use xlink:href="./images/sprite.svg#vk" ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__icon-img" viewBox="0 0 25 25">
+                    <use xlink:href="./images/sprite.svg#facebook" ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__icon-img" viewBox="0 0 25 25">
+                    <use xlink:href="./images/sprite.svg#insta" ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__icon-img" viewBox="0 -1 25 25">
+                    <use xlink:href="./images/sprite.svg#twitter" ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </footer>
       </section>
     </div>
   </div>
