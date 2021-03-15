@@ -175,7 +175,7 @@ img {
   height: 100vh;
   color: white;
   position: relative;
-  min-height: 36.1111111111rem;
+  min-height: 47.2222222222rem;
 }
 @media screen and (max-width: 768px) {
   .hero {
