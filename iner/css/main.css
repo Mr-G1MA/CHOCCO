@@ -172,9 +172,10 @@ img {
 .hero {
   background: url("../images/leaf_bg.png") right bottom no-repeat;
   background-color: #61C4D9;
-  height: 50rem;
+  height: 100vh;
   color: white;
   position: relative;
+  min-height: 36.1111111111rem;
 }
 @media screen and (max-width: 768px) {
   .hero {

@@ -2,9 +2,10 @@
   background:  
   url('../images/leaf_bg.png') right bottom no-repeat;
   background-color: $blue;
-  height: rem(900px);
+  height: 100vh;
   color: white;
   position: relative;
+  min-height: rem(650px);
 
   @include tablets{
     background-position: right bottom 78%;
