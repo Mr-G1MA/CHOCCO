@@ -4,12 +4,11 @@
 
   @include tablets{
     flex-direction: column;
-    padding: 0 18%;
+    max-width: 466px;
+    margin: 0 auto;
   }
 
-  @include phones{
-    padding: 0;
-  }
+  
 }
 
 .form__col{

@@ -2,13 +2,13 @@
   background:  
   url('../images/leaf_bg.png') right bottom no-repeat;
   background-color: $blue;
-  height: 100vh;
   color: white;
   position: relative;
-  min-height: rem(850px);
+  min-height: rem(650px);
 
   @include tablets{
     background-position: right bottom 78%;
+    min-height: auto;
   }
 }
 
@@ -102,11 +102,10 @@
   padding-right: 13%;
 
   @include tablets{
-    padding: 0 25%;
+    max-width: 371px;
+    padding: 0;
     margin-bottom: rem(20px);
   }
 
-  @include phones{
-    padding: 0 13%;
-  }
+  
 }

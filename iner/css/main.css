@@ -1,6 +1,7 @@
 @import "normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;600;700;800&display=swap");
 html {
+  min-width: 320px;
   font-size: 18px;
 }
 @media screen and (max-width: 768px) {
@@ -10,7 +11,7 @@ html {
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 16px;
+    font-size: 2vmax;
   }
 }
 
@@ -164,22 +165,21 @@ img {
   }
 }
 
-.section.map-section {
-  height: 41.1111111111rem;
+.map-section {
   background: url("../images/map.png") center center/cover no-repeat;
 }
 
 .hero {
   background: url("../images/leaf_bg.png") right bottom no-repeat;
   background-color: #61C4D9;
-  height: 100vh;
   color: white;
   position: relative;
-  min-height: 47.2222222222rem;
+  min-height: 36.1111111111rem;
 }
 @media screen and (max-width: 768px) {
   .hero {
     background-position: right bottom 78%;
+    min-height: auto;
   }
 }
 
@@ -274,13 +274,9 @@ img {
 }
 @media screen and (max-width: 768px) {
   .hero__title-desc {
-    padding: 0 25%;
+    max-width: 371px;
+    padding: 0;
     margin-bottom: 1.1111111111rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero__title-desc {
-    padding: 0 13%;
   }
 }
 
@@ -454,7 +450,7 @@ img {
 }
 
 .section {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -492,17 +488,8 @@ img {
 
 .headline__subtitle {
   color: #666666;
-  padding: 0 26%;
-}
-@media screen and (max-width: 768px) {
-  .headline__subtitle {
-    padding: 0 24%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .headline__subtitle {
-    padding: 0;
-  }
+  max-width: 436px;
+  margin: 0 auto;
 }
 
 .benefits {
@@ -612,7 +599,6 @@ img {
 @media screen and (max-width: 480px) {
   .benefits-section {
     background: none;
-    padding: 4% 0;
   }
   .benefits-section:before {
     background: none;
@@ -776,11 +762,6 @@ img {
     background: none;
   }
 }
-@media screen and (max-width: 480px) {
-  .reviews__section {
-    padding: 4% 0;
-  }
-}
 
 .reviews__decor {
   position: absolute;
@@ -840,11 +821,6 @@ img {
     background: url("../images/order_back.png") center center no-repeat;
   }
 }
-@media screen and (max-width: 480px) {
-  .order__section {
-    padding: 4% 0;
-  }
-}
 
 .order__section-title {
   color: #365A49;
@@ -858,12 +834,8 @@ img {
 @media screen and (max-width: 768px) {
   .form {
     flex-direction: column;
-    padding: 0 18%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .form {
-    padding: 0;
+    max-width: 466px;
+    margin: 0 auto;
   }
 }
 

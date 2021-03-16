@@ -19,13 +19,7 @@
 
 .headline__subtitle{
   color: #666666;
-  padding: 0 26%;
+  max-width: 436px;
+  margin: 0 auto;
 
-  @include tablets {
-    padding: 0 24%;
-  }
-
-  @include phones{
-    padding:0;
-  }
 }
