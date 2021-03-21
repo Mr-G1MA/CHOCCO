@@ -1,5 +1,5 @@
 @import "normalize.css";
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;600;700;800&display=swap");
 html {
   min-width: 320px;
   font-size: 18px;
@@ -80,6 +80,251 @@ a {
 img {
   display: block;
   max-width: 100%;
+}
+
+.compound-info {
+  width: 273px;
+  height: 344px;
+  position: absolute;
+  background: #F2F5F4;
+  padding: 24px 26px;
+  color: black;
+  top: 0;
+  left: 92px;
+  opacity: 0;
+}
+
+.compound__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.compound__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.compound__item-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.compound-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.products {
+  background: #F8FAF9;
+}
+
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .products-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.product__desc {
+  display: flex;
+  flex-direction: column;
+  width: 39%;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .product__desc {
+    width: 70%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__desc {
+    width: 100%;
+  }
+}
+
+.product-img {
+  width: 58%;
+  position: relative;
+}
+
+.compound {
+  width: 91px;
+  height: 91px;
+  border-radius: 4px;
+  background: #86C3D7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+  transition: color 0.3s;
+}
+.compound:hover {
+  background: #91c6d8;
+}
+.compound:hover .compound-info {
+  opacity: 0.95;
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .compound {
+    display: none;
+  }
+}
+
+.compound-text {
+  text-transform: uppercase;
+  font-size: 0.7777777778rem;
+  font-weight: bold;
+  color: white;
+}
+
+.compound-img {
+  width: 46px;
+  height: 46px;
+  fill: white;
+}
+
+.product__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.product-text {
+  margin-bottom: 12px;
+}
+
+.product-info {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .product-info {
+    justify-content: center;
+  }
+}
+
+.info-value {
+  color: black;
+  font-weight: bold;
+}
+
+.product-calories {
+  margin-right: 9%;
+}
+
+.product-order {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .product-order {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+
+.order-price {
+  font-size: 3.3333333333rem;
+  font-weight: 300;
+  color: black;
+  margin-right: 2.1111111111rem;
+  white-space: nowrap;
+}
+
+.arrow-left {
+  position: absolute;
+  left: 3%;
+}
+@media screen and (max-width: 768px) {
+  .arrow-left {
+    left: 18%;
+    top: 24%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow-left {
+    left: 2%;
+  }
+}
+
+.arrow-right {
+  position: absolute;
+  right: -2%;
+}
+@media screen and (max-width: 768px) {
+  .arrow-right {
+    right: 15%;
+    top: 24%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow-right {
+    right: 2%;
+  }
+}
+
+.hidden-menu {
+  height: 100vh;
+  width: 100%;
+  background: #333537;
+  opacity: 0.9;
+  z-index: 1000;
+  position: fixed;
+  right: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.hidden-menu__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hidden-menu__list {
+  display: flex;
+  flex-direction: column;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.hidden-menu__item {
+  font-size: 2rem;
+  color: white;
+}
+
+.hidden-menu__link {
+  text-decoration: none;
+}
+
+.close-element {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .socials {

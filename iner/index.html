@@ -11,7 +11,34 @@
   <div class="wrapper">
     <div class="maincontent">
       <section class="section hero">
-        
+        <div class="hidden-menu" id="menu-overlay">
+          <a href="#" class="close-element" id="close">✖</a>
+          <div class="hidden-menu__container">
+            <ul class="hidden-menu__list">
+              <li class="hidden-menu__item">
+                <a href="#" class="hidden-menu__link">О нас</a>
+              </li>
+              <li class="hidden-menu__item">
+                <a href="#" class="hidden-menu__link">Батончики</a>
+              </li>
+              <li class="hidden-menu__item">
+                <a href="#" class="hidden-menu__link">Команда</a>
+              </li>
+              <li class="hidden-menu__item">
+                <a href="#" class="hidden-menu__link">Меню</a>
+              </li>
+              <li class="hidden-menu__item">
+                <a href="#" class="hidden-menu__link">Отзывы</a>
+              </li>
+              <li class="hidden-menu__item">
+                <a href="#" class="hidden-menu__link">Как мы работаем</a>
+              </li>
+              <li class="hidden-menu__item">
+                <a href="#" class="hidden-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="container hero__container">
           <header class="header">
             <div class="header__logo">
@@ -54,7 +81,7 @@
                 8 800 555 35 35
               </span>
             </a>
-            <a href="" class="hamburger">
+            <a href="" class="hamburger" id="hamburger-link">
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
@@ -164,6 +191,133 @@
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="section products">
+        <div class="container products-container">
+          <a href="#" class="arrow-left">
+            <img src="./images/left.png" alt="left" class="arrow-left__icon">
+          </a>
+          <a href="#" class="arrow-right">
+            <img src="./images/right.png" alt="right" class="arrow-right__icon">
+          </a>
+          <div class="product-img">
+            <img src="./images/product-grapes.png" alt="grapes" class="product-img__png">
+          </div>
+          <div class="product__desc">
+            <div class="compound">
+            <svg class="compound-img" viewBox="0 0 46 46">
+              <use xlink:href="./images/sprite.svg#chocolate" ></use>
+            </svg>
+            <div class="compound-text">
+              Состав
+            </div>
+            <div class="compound-info">
+              <ul class="compound__list">
+                <li class="compound__item">
+                  <svg class="compound__item-icon" viewBox="-5 -3 32 32">
+                    <use xlink:href="./images/sprite.svg#grape" ></use>
+                  </svg>
+                  <div class="compound-name">
+                    Виноград
+                  </div>
+                  <div class="compound-value">
+                    25 г
+                  </div>
+                </li>
+                <li class="compound__item">
+                  <svg class="compound__item-icon" viewBox="0 0 32 32">
+                    <use xlink:href="./images/sprite.svg#nut" ></use>
+                  </svg>
+                  <div class="compound-name">
+                    Грецкий орех
+                  </div>
+                  <div class="compound-value">
+                    32 г
+                  </div>
+                </li>
+                <li class="compound__item">
+                  <svg class="compound__item-icon" viewBox="0 0 32 32">
+                    <use xlink:href="./images/sprite.svg#almond" ></use>
+                  </svg>
+                  <div class="compound-name">
+                    Кунжутное семя
+                  </div>
+                  <div class="compound-value">
+                    20 г
+                  </div>
+                </li>
+                <li class="compound__item">
+                  <svg class="compound__item-icon" viewBox="0 0 32 32">
+                    <use xlink:href="./images/sprite.svg#wash" ></use>
+                  </svg>
+                  <div class="compound-name">
+                    Сухое молоко
+                  </div>
+                  <div class="compound-value">
+                    10 г
+                  </div>
+                </li>
+                <li class="compound__item">
+                  <svg class="compound__item-icon" viewBox="0 0 32 32">
+                    <use xlink:href="./images/sprite.svg#bee" ></use>
+                  </svg>
+                  <div class="compound-name">
+                    Зам. сахара
+                  </div>
+                  <div class="compound-value">
+                    4 г
+                  </div>
+                </li>
+                <li class="compound__item">
+                  <svg class="compound__item-icon" viewBox="0 0 32 32">
+                    <use xlink:href="./images/sprite.svg#beans" ></use>
+                  </svg>
+                  <div class="compound-name">
+                    Какао бобы
+                  </div>
+                  <div class="compound-value">
+                    4 г
+                  </div>
+                </li>
+              </ul>
+            </div>
+            </div>
+            
+            <div class="product-desc__content">
+              <div class="product__title">
+                Батончик “Гранола виноград”
+              </div>
+              <div class="product-text">
+                Гранола из винограда, грецкого ореха и кунжутных семечек. 
+                В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+              </div>
+              <div class="product-info">
+                <div class="product-calories">
+                  <div class="info-name">
+                    Калорийность
+                  </div>
+                  <div class="info-value">
+                    110 ккал
+                  </div>
+                </div>
+                <div class="product-weight">
+                  <div class="info-name">
+                    Вес
+                  </div>
+                  <div class="info-value">
+                    95 грамм
+                  </div>
+                </div>
+              </div>
+              <div class="product-order">
+                <div class="order-price">
+                  140 ₽
+                </div>
+                <a href="" class="btn btn-theme-green">Заказать</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section reviews__section">
@@ -372,5 +526,6 @@
       </li>
     </ul>
   </nav>
+  <script src="../JS/hidden-menu.js"></script>
 </body>
 </html>

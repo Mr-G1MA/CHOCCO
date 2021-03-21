@@ -10,9 +10,12 @@ $phones: 480px;
 @import "blocks/media.scss";
 @import "normalize.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;600;700;800&display=swap');
 @import "blocks/layout.scss";
 
+@import "blocks/compound-info.scss";
+@import "blocks/products.scss";
+@import "blocks/hidden-menu.scss";
 @import "blocks/socials.scss";
 @import "blocks/footer.scss";
 @import "blocks/map.scss";
