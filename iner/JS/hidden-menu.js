@@ -12,7 +12,7 @@ hamburger.addEventListener('click', function(event){
 close.addEventListener('click', function(event){
   event.preventDefault();
 
-  menu.style.right = '-100%' ;
+  menu.style.right = '-200%' ;
 })
 
 menu.addEventListener("click", (e) => {
@@ -22,5 +22,5 @@ menu.addEventListener("click", (e) => {
   else {
     close.click();
   }
-   console.log(e.target);
+   
 });
