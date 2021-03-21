@@ -289,7 +289,7 @@ img {
   opacity: 0.9;
   z-index: 1000;
   position: fixed;
-  right: -100%;
+  right: -200%;
   display: flex;
   justify-content: center;
   align-items: center;
