@@ -90,8 +90,7 @@ img {
   padding: 24px 26px;
   color: black;
   top: 0;
-  left: 92px;
-  opacity: 0;
+  left: -9999px;
 }
 
 .compound__list {
@@ -135,27 +134,47 @@ img {
   }
 }
 
-.product__desc {
-  display: flex;
-  flex-direction: column;
+.product__desc-wrapper {
   width: 39%;
-  position: relative;
 }
 @media screen and (max-width: 768px) {
-  .product__desc {
+  .product__desc-wrapper {
     width: 70%;
     text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
-  .product__desc {
+  .product__desc-wrapper {
     width: 100%;
   }
 }
 
-.product-img {
-  width: 58%;
+.product__desc {
+  display: flex;
+  flex-direction: column;
   position: relative;
+}
+
+.product-img {
+  position: relative;
+  width: 58%;
+}
+@media screen and (max-width: 768px) {
+  .product-img {
+    width: 20.1111111111rem;
+    height: 19rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product-img {
+    height: 16.6666666667rem;
+  }
+}
+
+.product-img__png {
+  max-height: 100%;
+  object-fit: cover;
+  margin: auto;
 }
 
 .compound {
@@ -175,8 +194,7 @@ img {
   background: #91c6d8;
 }
 .compound:hover .compound-info {
-  opacity: 0.95;
-  transition: 0.3s;
+  left: 100%;
 }
 @media screen and (max-width: 768px) {
   .compound {
@@ -205,17 +223,17 @@ img {
   text-transform: uppercase;
 }
 
-.product-text {
+.product__text {
   margin-bottom: 12px;
 }
 
-.product-info {
+.product__info {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
-  .product-info {
+  .product__info {
     justify-content: center;
   }
 }
@@ -225,24 +243,24 @@ img {
   font-weight: bold;
 }
 
-.product-calories {
+.product__calories {
   margin-right: 9%;
 }
 
-.product-order {
+.product__order {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
-  .product-order {
+  .product__order {
     justify-content: center;
     flex-wrap: nowrap;
   }
 }
 
-.order-price {
+.product__order-price {
   font-size: 3.3333333333rem;
   font-weight: 300;
   color: black;
@@ -252,7 +270,7 @@ img {
 
 .arrow-left {
   position: absolute;
-  left: 3%;
+  left: -1%;
 }
 @media screen and (max-width: 768px) {
   .arrow-left {
@@ -260,9 +278,15 @@ img {
     top: 24%;
   }
 }
+@media screen and (max-width: 568px) {
+  .arrow-left {
+    left: 13%;
+  }
+}
 @media screen and (max-width: 480px) {
   .arrow-left {
     left: 2%;
+    top: 22%;
   }
 }
 
@@ -276,9 +300,15 @@ img {
     top: 24%;
   }
 }
+@media screen and (max-width: 568px) {
+  .arrow-right {
+    right: 10%;
+  }
+}
 @media screen and (max-width: 480px) {
   .arrow-right {
     right: 2%;
+    top: 22%;
   }
 }
 
