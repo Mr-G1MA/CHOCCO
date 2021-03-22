@@ -1,0 +1,27 @@
+.benefits-section{
+  position: relative;
+  background: url('../images/decor_leaf.png') left bottom 50% no-repeat;
+
+  &:before{
+    content: "";
+    position: absolute;
+    bottom: rem(-100px);
+    left: 0;
+    width: rem(162px);
+    height: rem(324px);
+    background: url('../images/bar.png') center / contain no-repeat;
+  }
+
+  @include tablets{
+    background-position: left bottom 90%;
+  }
+
+  @include phones{
+    background: none;
+    &:before{
+      background: none;
+    }
+
+    
+  }
+}

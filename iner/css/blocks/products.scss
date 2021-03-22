@@ -1,0 +1,191 @@
+.products{
+  background: #F8FAF9;
+
+}
+
+.products-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.product__desc-wrapper{
+  width: 39%;
+
+  @include tablets{
+    width: 70%;
+    text-align: center;
+  }
+
+  @include phones{
+    width: 100%;
+  }
+}
+
+
+
+.product__desc{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.product-img{
+  position: relative;
+  width: 58%;
+
+  @include tablets{
+    width: rem(362px);
+    height: rem(342px);
+  }
+
+  @include phones{
+    height: rem(300px);
+  }
+  
+}
+
+.product-img__png{
+  max-height: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+
+
+.compound{
+  width: 91px;
+  height: 91px;
+  border-radius: 4px;
+  background: #86C3D7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+  transition: color 0.3s;
+
+
+  &:hover{
+    background: #91c6d8;
+    .compound-info{
+      left:100%;
+      
+    }
+  }
+
+  @include tablets{
+    display: none;
+  }
+}
+
+.compound-text{
+  text-transform: uppercase;
+  font-size: rem(14px);
+  font-weight: bold;
+  color: white;
+}
+
+.compound-img{
+  width: 46px;
+  height: 46px;
+  fill: white;
+}
+
+.product__title{
+  font-size: rem(36px);
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+
+  
+}
+
+.product__text{
+  margin-bottom: 12px;
+}
+
+.product__info{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+
+  @include tablets{
+    justify-content: center;
+  }
+}
+
+.info-value{
+  color: black;
+  font-weight: bold;
+}
+
+.product__calories{
+  margin-right: 9%;
+}
+
+.product__order{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include tablets{
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+
+.product__order-price{
+  font-size: rem(60px);
+  font-weight: 300;
+  color: black;
+  margin-right: rem(38px);
+  white-space: nowrap;
+}
+
+.arrow-left{
+  position: absolute;
+  left:-1%;
+
+  @include tablets{
+    left: 18%;
+    top: 24%;
+  }
+
+  @include tablets-min{
+    left: 13%;
+  }
+
+  @include phones{
+    left: 2%;
+    top: 22%;
+  }
+}
+
+.arrow-right{
+  position: absolute;
+  right: -2%;
+
+  @include tablets{
+    right: 15%;
+    top:24%;
+  }
+
+  @include tablets-min{
+    right: 10%;
+  }
+
+  @include phones{
+    right: 2%;
+    top: 22%;
+  }
+}
