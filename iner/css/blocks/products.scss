@@ -3,16 +3,22 @@
 
 }
 
+.product{
+  display: flex;
+  
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .products-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 
-  @include tablets{
-    flex-direction: column;
-    align-items: center;
-  }
+  
 }
 
 .product__desc-wrapper{
