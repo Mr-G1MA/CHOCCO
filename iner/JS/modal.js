@@ -53,9 +53,16 @@ $(".form").submit(e =>{
         src: "#modal",
         type : "inline"
       });
+      var inputs = document.querySelectorAll('input[type=text]');
+      var textarea = document.querySelector('textarea[name = comment]');
+      for (var i = 0;  i < inputs.length; i++) {
+        inputs[i].value = '';
+      };
+      textarea.value = '';
     });
   
   }
+  
 
 });
 
