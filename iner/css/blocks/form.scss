@@ -11,6 +11,8 @@
   
 }
 
+
+
 .form__col{
   flex:1;
   margin-right: rem(30px);
@@ -70,6 +72,10 @@
       margin-bottom: 0;
     }
   }
+}
+
+.error{
+  border: 2px solid red;
 }
 
 .form__controls{

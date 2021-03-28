@@ -45,6 +45,10 @@
     }
   }
 
+  &:focus{
+    outline: none;
+  }
+
   @include phones{
     padding: rem(23px) rem(53px);
   }

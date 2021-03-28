@@ -14,6 +14,8 @@ $phones: 480px;
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;600;700;800&display=swap');
 @import "blocks/layout.scss";
 
+@import "blocks/modal.scss";
+@import "blocks/team.scss";
 @import "blocks/compound-info.scss";
 @import "blocks/products.scss";
 @import "blocks/hidden-menu.scss";

@@ -41,14 +41,20 @@
   }
 }
 
-.reviews__display-inner{
-  display: flex;
+
+
+.reviews__item{
+  display: none;
 
   @include tablets{
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
+}
+
+.reviews__item-active{
+  display: flex;
 }
 
 .reviews__avatar{

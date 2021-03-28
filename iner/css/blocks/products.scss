@@ -18,7 +18,12 @@
   align-items: center;
   position: relative;
 
-  
+  .bx-wrapper{
+    border:0;
+    box-shadow: none;
+    background: transparent;
+    margin-bottom: 0;
+  }
 }
 
 .product__desc-wrapper{
@@ -160,7 +165,7 @@
 
 .arrow-left{
   position: absolute;
-  left:-1%;
+  left:1%;
 
   @include tablets{
     left: 18%;
