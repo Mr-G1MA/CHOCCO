@@ -16,7 +16,7 @@ close.addEventListener('click', function(event){
 })
 
 menu.addEventListener("click", (e) => {
-  if (e.target.classList.contains("hidden-menu__link") || e.target.classList.contains("hidden-menu__item")) {
+  if (e.target.classList.contains("hidden-menu__item")) {
     
   }
   else {
