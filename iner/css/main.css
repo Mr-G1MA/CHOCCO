@@ -114,21 +114,16 @@ img {
 .team {
   display: none;
 }
-@media screen and (max-width: 768px) {
-  .team--mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .team--desktop {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   .team--desktop {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -221,6 +216,19 @@ img {
 @media screen and (max-width: 480px) {
   .team__member {
     width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__member {
+    display: none;
+  }
+}
+.team__member-mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team__member-mobile {
+    display: block;
   }
 }
 
