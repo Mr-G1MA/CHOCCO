@@ -35,6 +35,10 @@
     }
   }
 
+  @include phones{
+    max-width: 17rem;
+  }
+
   
 }
 
@@ -70,7 +74,11 @@
 }
 
 .team__content-text{
-  width: 259px;
+  width: 224px;
+
+  @include tablets{
+    width: 259px;
+  }
 }
 
 .team__title{
@@ -107,9 +115,6 @@
   width: 100%;
   margin-bottom: 20px;
 
-  @include phones{
-    width: 60%;
-  }
   @include tablets{
     display: none;
   }
@@ -118,6 +123,10 @@
     display: none;
     @include tablets{
       display: block;
+      width: 85%;
+    }
+    @include phones{
+      width: 50%;
     }
   }
 
