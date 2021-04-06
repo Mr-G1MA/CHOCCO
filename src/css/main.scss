@@ -1,0 +1,15 @@
+$baseFontSize: 18px;
+
+
+$z-fixed-menu: 100;
+
+$blue: #61C4D9;
+
+$tablets: 768px;
+$phones: 480px;
+
+@import "blocks/media.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "blocks/*.scss";
+
