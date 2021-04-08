@@ -5,7 +5,7 @@
 
 .headline__title{
   color: #292929;
-  margin-bottom: rem(10px);
+  margin-bottom: rem(10px) !important;
   text-transform: uppercase;
 
   @include phones{

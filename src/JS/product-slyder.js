@@ -2,7 +2,8 @@
   
   const slyder = $('.product__list').bxSlider({
     pager : false,
-    controls : false
+    controls : false,
+    touchEnabled : $(window).width() < 769
   });
   
   $(".arrow-left").click(e =>{
@@ -13,9 +14,7 @@
   });
   
   $(".arrow-right").click(e =>{
-  
     e.preventDefault();
-  
     slyder.goToNextSlide();
   });
 })()

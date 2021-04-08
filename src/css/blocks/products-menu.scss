@@ -52,7 +52,10 @@
 
 .products-menu__item{
   display: flex;
-  
+  position: relative;
+    right: 0px;
+    z-index: 0;
+    height: 100%;
 }
 
 .products-menu__title{
